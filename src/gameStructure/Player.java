@@ -1,3 +1,4 @@
+package gameStructure;
 
 public class Player extends Character {
 	public String classe;

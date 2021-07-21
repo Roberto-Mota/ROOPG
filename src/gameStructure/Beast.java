@@ -1,3 +1,4 @@
+package gameStructure;
 
 public class Beast extends NonPlayable { //heranças múltiplas não podem ser feitas no Java, mas em outras linguagens sim (Python por exemplo)
 

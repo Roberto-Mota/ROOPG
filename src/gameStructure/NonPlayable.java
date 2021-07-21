@@ -1,3 +1,4 @@
+package gameStructure;
 
 public abstract class NonPlayable extends Character{
 	

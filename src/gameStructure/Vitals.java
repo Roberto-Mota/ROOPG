@@ -1,3 +1,4 @@
+package gameStructure;
 
 public class Vitals {
 	protected double stamina = 100;

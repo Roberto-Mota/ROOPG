@@ -1,0 +1,198 @@
+[33mcommit 34aca5b8e31fbbebbe36e1eb2c83ee09adcfa502[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Paulo R. R. Mota <paulo.kiin@live.com>
+Date:   Sat Jul 17 20:53:15 2021 -0300
+
+    First upload to Git
+
+[1mdiff --git a/.classpath b/.classpath[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7d3b4d8[m
+[1m--- /dev/null[m
+[1m+++ b/.classpath[m
+[36m@@ -0,0 +1,10 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<classpath>[m
+[32m+[m	[32m<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-15">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="module" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry kind="src" path="src"/>[m
+[32m+[m	[32m<classpathentry kind="output" path="bin"/>[m
+[32m+[m[32m</classpath>[m
+[1mdiff --git a/.project b/.project[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b96b1f0[m
+[1m--- /dev/null[m
+[1m+++ b/.project[m
+[36m@@ -0,0 +1,17 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<projectDescription>[m
+[32m+[m	[32m<name>RPGMiniProject</name>[m
+[32m+[m	[32m<comment></comment>[m
+[32m+[m	[32m<projects>[m
+[32m+[m	[32m</projects>[m
+[32m+[m	[32m<buildSpec>[m
+[32m+[m		[32m<buildCommand>[m
+[32m+[m			[32m<name>org.eclipse.jdt.core.javabuilder</name>[m
+[32m+[m			[32m<arguments>[m
+[32m+[m			[32m</arguments>[m
+[32m+[m		[32m</buildCommand>[m
+[32m+[m	[32m</buildSpec>[m
+[32m+[m	[32m<natures>[m
+[32m+[m		[32m<nature>org.eclipse.jdt.core.javanature</nature>[m
+[32m+[m	[32m</natures>[m
+[32m+[m[32m</projectDescription>[m
+[1mdiff --git a/.settings/org.eclipse.jdt.core.prefs b/.settings/org.eclipse.jdt.core.prefs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..223b166[m
+[1m--- /dev/null[m
+[1m+++ b/.settings/org.eclipse.jdt.core.prefs[m
+[36m@@ -0,0 +1,14 @@[m
+[32m+[m[32meclipse.preferences.version=1[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.targetPlatform=15[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.unusedLocal=preserve[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.compliance=15[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.debug.lineNumber=generate[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.debug.localVariable=generate[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.debug.sourceFile=generate[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.assertIdentifier=error[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.enablePreviewFeatures=disabled[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.enumIdentifier=error[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.reportPreviewFeatures=warning[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.release=enabled[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.source=15[m
+[1mdiff --git a/bin/Beast.class b/bin/Beast.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ed83847[m
+Binary files /dev/null and b/bin/Beast.class differ
+[1mdiff --git a/bin/Character.class b/bin/Character.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7f4f6af[m
+Binary files /dev/null and b/bin/Character.class differ
+[1mdiff --git a/bin/CombatSystem.class b/bin/CombatSystem.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e4792ed[m
+Binary files /dev/null and b/bin/CombatSystem.class differ
+[1mdiff --git a/bin/NonPlayable.class b/bin/NonPlayable.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9014d30[m
+Binary files /dev/null and b/bin/NonPlayable.class differ
+[1mdiff --git a/bin/Player.class b/bin/Player.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..82d219c[m
+Binary files /dev/null and b/bin/Player.class differ
+[1mdiff --git a/bin/Special.class b/bin/Special.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..546df0a[m
+Binary files /dev/null and b/bin/Special.class differ
+[1mdiff --git a/bin/TestaCriaChar.class b/bin/TestaCriaChar.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0931545[m
+Binary files /dev/null and b/bin/TestaCriaChar.class differ
+[1mdiff --git a/bin/Vitals.class b/bin/Vitals.class[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ddf9c77[m
+Binary files /dev/null and b/bin/Vitals.class differ
+[1mdiff --git a/src/Beast.java b/src/Beast.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8f02bd1[m
+[1m--- /dev/null[m
+[1m+++ b/src/Beast.java[m
+[36m@@ -0,0 +1,7 @@[m
+[32m+[m
+[32m+[m[32mpublic class Beast extends NonPlayable { //heranças múltiplas não podem ser feitas no Java, mas em outras linguagens sim (Python por exemplo)[m
+[32m+[m
+[32m+[m	[32mpublic Beast(String nome, Player player, boolean NPC) { //Não herdamos o construtor, pois ele é apenas da classe[m
+[32m+[m		[32msuper(nome, player, NPC);[m
+[32m+[m	[32m}[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/src/Character.java b/src/Character.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..89b1d17[m
+[1m--- /dev/null[m
+[1m+++ b/src/Character.java[m
+[36m@@ -0,0 +1,92 @@[m
+[32m+[m
+[32m+[m[32mpublic abstract class Character { //caso eu precisa fazer um espécie de herança múltipla com alguma classe, precisarei usar interfaces[m
+[32m+[m[41m	[m
+[32m+[m	[32m//Value Objects = classes que se limitam a ter atributos privados com os setters e getters.[m
+[32m+[m[41m	[m
+[32m+[m	[32mprivate String nome;[m
+[32m+[m	[32mprotected double gold;[m
+[32m+[m	[32mprivate double xp;[m
+[32m+[m	[32mprivate int level;[m
+[32m+[m	[32mprivate int classe; //00 -> warrior, 01 -> rogue, 02 -> mage[m
+[32m+[m	[32mprivate boolean NPC = false;[m
+[32m+[m	[32mpublic static int total;[m
+[32m+[m	[32mVitals vitals = new Vitals();[m
+[32m+[m	[32mSpecial special = new Special();[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic Character(String nome, boolean NPC) {[m
+[32m+[m		[32mthis.nome = nome;[m
+[32m+[m		[32mthis.NPC = NPC;[m
+[32m+[m		[32mthis.level = 1;[m
+[32m+[m		[32mthis.xp = 0;[m
+[32m+[m		[32mthis.gold = 0;[m
+[32m+[m		[32mCharacter.total++;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32mpublic Character(String nome, Player player, boolean NPC) {[m
+[32m+[m		[32mthis.setLevel(player.getLevel() - 1);[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic boolean attack(double dano, Character enemy) {[m[41m	[m
+[32m+[m		[32mif(NPC) {[m
+[32m+[m[41m			[m
+[32m+[m		[32m}[m
+[32m+[m		[32mif(this.vitals.stamina >= 15) {[m
+[32m+[m			[32mthis.vitals.stamina -= 15;[m
+[32m+[m			[32menemy.vitals.health -= dano;[m
+[32m+[m			[32mSystem.out.println(this.nome + " attacked " + enemy.nome + " and did " + dano + " of damage.");[m
+[32m+[m			[32mreturn true;[m
+[32m+[m		[32m} else {[m
+[32m+[m			[32mSystem.out.println("Not enough stamina");[m
+[32m+[m			[32mreturn false;[m
+[32m+[m		[32m}[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic String getNome() {[m
+[32m+[m		[32mreturn nome;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32mpublic void setNome(String nome) {[m
+[32m+[m		[32mthis.nome = nome;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32mpublic double getGold() {[m
+[32m+[m		[32mreturn gold;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32mpublic void setGold(double gold) {[m
+[32m+[m		[32mthis.gold = gold;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32mpublic double getXp() {[m
+[32m+[m		[32mreturn xp;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32mpublic void setXp(double xp) {[m
+[32m+[m		[32mthis.xp = xp;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32mpublic int getLevel() {[m
+[32m+[m		[32mreturn level;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32mpublic void setLevel(int level) {[m
+[32m+[m		[32mthis.level = level;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32mpublic int getClasse() {[m
+[32m+[m		[32mreturn classe;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m	[32mpublic void setClasse(int classe) {[m
+[32m+[m		[3

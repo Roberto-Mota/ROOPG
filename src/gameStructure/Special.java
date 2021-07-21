@@ -1,3 +1,4 @@
+package gameStructure;
 
 public class Special {
 	protected int strength;

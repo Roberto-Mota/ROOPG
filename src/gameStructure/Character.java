@@ -1,3 +1,4 @@
+package gameStructure;
 
 public abstract class Character { //caso eu precisa fazer um espécie de herança múltipla com alguma classe, precisarei usar interfaces
 	
