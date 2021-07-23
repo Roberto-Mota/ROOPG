@@ -1,0 +1,17 @@
+* commit 2bcbc2e8128a4cd7ac7fcf128683358370ccb53f
+| Author: Paulo R. R. Mota <paulo.kiin@live.com>
+| Date:   Wed Jul 21 15:40:47 2021 -0300
+| 
+|     Redirecionamento de classes para pacotes refatorados
+| 
+* commit 34aca5b8e31fbbebbe36e1eb2c83ee09adcfa502
+| Author: Paulo R. R. Mota <paulo.kiin@live.com>
+| Date:   Sat Jul 17 20:53:15 2021 -0300
+| 
+|     First upload to Git
+| 
+* commit 20dbdeb5d9d7d21f03e8f26392ce01b2993c0b8b
+  Author: Paulo R. R. Mota <paulo.kiin@live.com>
+  Date:   Sat Jul 17 19:49:14 2021 -0300
+  
+      Initial commit
