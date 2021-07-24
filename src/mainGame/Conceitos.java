@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 import gameStructure.Player;
 
-public class MenuTest {
+public class Conceitos {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
 		// Objetos do sistema
 		Scanner in = new Scanner(System.in);
@@ -35,28 +35,9 @@ public class MenuTest {
 
 		// GAME: "Label" do loop while
 		while (running) {
-			System.out.println("--------------------------------------");
 
-			// System.out.println("Whats your name?");
-			// String input = in.nextLine(); // Retorna qualquer coisa que eu escrever no console (pode abrir aqui pra
-			// 								// possibilidades de GUI)
-			// String nomePersonagem = input;
-
-			// System.out.println("Choose your class");
-			// String escolhaClasse = in.nextLine();
-			// // Aqui abre espaço para a escolha da classe e atribuição no respectivo objeto,
-			// // podendo implementar um switch ou um ENUMS
-
-			// Player player = new Player(nomePersonagem, false);
-
-			// player.setNome(nomePersonagem);
 
 			MENU: while (menuChoices) {
-				System.out.println("\tYou are on your own.");
-				System.out.println("\t1: Hunt down monsters");
-				System.out.println("\t2: ");
-				System.out.println("\t3: ");
-				System.out.println("\t4: ");
 				System.out.println("\t5: Try to sleep.");
 				int menuChoicesOption = in.nextInt();
 
@@ -70,17 +51,17 @@ public class MenuTest {
 						System.out
 								.println("You wake up in the middle of your sleep with a loud noise, it's a monster!");
 
-					} else {
-						//player.sleep(hoursSleep);
+					}
 					}
 
-				}
+				
 
-				else if (menuChoicesOption == 1) {
+				else if (menuChoicesOption == 2) {
 
 					System.out.println("You go on a search for enemies.");
 					combat = true;
 				}
+         }
 
 				// COMBAT:
 				while (combat == true) {
@@ -88,7 +69,6 @@ public class MenuTest {
 					// Geração randomica entre os inimigos possíveis
 					int enemyHealth = rand.nextInt(maxEnemyHealth); // The paramater is the max value that this random int can be (0 to numero dado)
 					String enemy = enemies[rand.nextInt(enemies.length)]; // Pega o nome do inimigo
-
 
 					while (enemyHealth > 0) {
 
@@ -101,10 +81,10 @@ public class MenuTest {
 						System.out.println("\t3: Run!");
 
 
-
-						String combatChoice = in.nextLine(); //Estou com dificuldade nessa parte, precisarei estudar mais objects, scanners e stream
+						String combatChoice = in.nextLine();
 						
 						if (combatChoice == null) {
+                            System.out.println("porraaaaaaaaaaaaaaaaaaaaaa");
 						}
 
 						else if (combatChoice.equals("1")) { // Atacar o inimgo
@@ -135,77 +115,32 @@ public class MenuTest {
 
 						}
 
-						else if (combatChoice.equals("3")) { // Tentar correr
+						else if (combatChoice.equals("3")) { 
 							int runTry = rand.nextInt(agility);
-							if (runTry > 2) { // Hard code que pode ser alterado
+							if (runTry > 2) { 
 								System.out.println("\tYou ran away from the enemy.");
-								continue MENU; // O continue move pra próxima itera��o do loop, como n�s estamos em um
-												// loop
-												// aninhado, ao usarmos o label, voltamos pro desejado
+								continue; 
 							} else {
 								System.out.println("\tYou tried to run away, but you failed.");
 							}
 						}
 
-						else { // Digito inv�lido, por ser um while loop, vai voltar pro inicio novamente
+						else { 
 							System.out.println("Invalid input, try again.");
 						}
-					}
+					
 
-					if (health <= 0) { // Morrer
-						System.out.println("\tGAME OVER!");
-						break; // Esse break quebra o loop running
-					}
+                        if (health <= 0) { // Morrer
+                            System.out.println("\tGAME OVER!");
+                            break; // Esse break quebra o loop running
+                        }
 
-					System.out.println("--------------------------------------");
-					System.out.println(" # " + enemy + " was defeated! # ");
-					System.out.println(" # You have " + health + " HP left. # ");
-					if (rand.nextInt(100) >= healthPotionDropChance) {
+                        System.out.println("--------------------------------------");
+                        System.out.println(" # " + enemy + " was defeated! # ");
+                        System.out.println(" # You have " + health + " HP left. # ");
+                        if (rand.nextInt(100) >= healthPotionDropChance) {
 						numHealthPotions++;
 						System.out.println("The enemy dropped a health potion.");
 						System.out.println("Now you have " + numHealthPotions + " potion(s).");
-
-					}
-
-				}
-				System.out.println("--------------------------------------");
-				System.out.println("What would you like to do?");
-				System.out.println("\t1: Continue fighting.");
-				System.out.println("\t2: Exit the dungeon.");
-
-				String input = in.nextLine();
-
-				while (!input.equals("1") && !input.equals("2")) { // "N�o � igual a"
-					System.out.println("Invalid command");
-					input = in.nextLine();
-				}
-
-				if (input.equals("1")) {
-					System.out.println("You continue with your adventure!");
-				} else if (input.equals("2")) {
-					System.out.println("You left the dungeon, succesful from your adventures!");
-					break;
-				}
-
-			}
-
-			System.out.println("\t#----------------#");
-			System.out.println("\tThanks for playing!");
-			System.out.println("\t#----------------#");
-
-		}
-	}
-
-}
-
-/**
- * Como deletar um objeto: Example 1:
- * 
- * Object a = new Object(); a = null; // after this, if there is no reference to
- * the object, // it will be deleted by the garbage collector Example 2:
- * 
- * if (something) { Object o = new Object(); } // as you leave the block, the
- * reference is deleted. // Later on, the garbage collector will delete the
- * object itself.
- * 
- */
+                        }
+                    }}}}}

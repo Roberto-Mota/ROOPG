@@ -1,6 +1,6 @@
 package gameStructure;
 
-public abstract class Character { //caso eu precisa fazer um espécie de herança múltipla com alguma classe, precisarei usar interfaces
+public abstract class Character { //caso eu precisa fazer um espï¿½cie de heranï¿½a mï¿½ltipla com alguma classe, precisarei usar interfaces
 	
 	//Value Objects = classes que se limitam a ter atributos privados com os setters e getters.
 	
@@ -8,7 +8,7 @@ public abstract class Character { //caso eu precisa fazer um espécie de herança 
 	protected double gold;
 	private double xp;
 	private int level;
-	private int classe; //00 -> warrior, 01 -> rogue, 02 -> mage
+
 	private boolean NPC = false;
 	public static int total;
 	Vitals vitals = new Vitals();
@@ -73,15 +73,6 @@ public abstract class Character { //caso eu precisa fazer um espécie de herança 
 	public void setLevel(int level) {
 		this.level = level;
 	}
-
-	public int getClasse() {
-		return classe;
-	}
-
-	public void setClasse(int classe) {
-		this.classe = classe;
-	}
-
 	public Vitals getVitals() {
 		return vitals;
 	}
