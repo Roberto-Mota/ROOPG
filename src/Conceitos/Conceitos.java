@@ -1,15 +1,34 @@
-package mainGame;
-
+package Conceitos;
+import java.time.*;
 import java.util.Random;
 import java.util.Scanner;
 
 import gameStructure.Player;
 
 public class Conceitos {
+	
+	//	Aplicar conceitos de Exception
+	//	Fazer os comentários de todo o programa
+	// Talvez o conceito de atributos de rpg (força, percepção etc. seja conveniente em uma interface)
+	
+	/**
+	 * @author (usado na classe ou interface)
+	 * @version (usado na classe ou interface)
+	 * @param (usado no método e construtor)
+	 * @return (usado apenas no método)
+	 * @exception ou @throws (no método ou construtor)
+	 * @see
+	 * @since
+	 * @serial
+	 * @deprecated
+	 * @param args
+	 * @Override (considerada uma configuração, nesse caso interpretado pelo compilador)
+	 */
 
     public static void main(String[] args) {
 
 		// Objetos do sistema
+    	//Instant relogio = new Instant(1234564565555555456, 5);
 		Scanner in = new Scanner(System.in);
 		Random rand = new Random(); // Utilizar para randomizaÃ§Ã£oo de coisas no jogo
 
@@ -84,7 +103,7 @@ public class Conceitos {
 						String combatChoice = in.nextLine();
 						
 						if (combatChoice == null) {
-                            System.out.println("porraaaaaaaaaaaaaaaaaaaaaa");
+                            System.out.println("teste");
 						}
 
 						else if (combatChoice.equals("1")) { // Atacar o inimgo

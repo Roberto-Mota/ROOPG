@@ -1,6 +1,6 @@
 package gameStructure;
 
-public class Player extends Character {
+public class Player extends GameCharacter {
 	
 	private int classe; //00 -> warrior, 01 -> rogue, 02 -> mage
 	

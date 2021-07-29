@@ -1,6 +1,6 @@
 package gameStructure;
 
-public abstract class NonPlayable extends Character{
+public abstract class NonPlayable extends GameCharacter{
 	
 	protected double XpPool = 25.0 * this.getLevel();
 
