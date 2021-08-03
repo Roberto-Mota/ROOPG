@@ -12,8 +12,9 @@ public class MenuTest {
 
 		// Objetos do sistema
 		Scanner in = new Scanner(System.in);
-		Random rand = new Random(); // Utilizar para randomizaçãoo de coisas no jogo
-		CombatSystem cs = new CombatSystem();
+		Random rand = new Random(); // Utilizar para randomizacao de coisas no jogo
+		
+		CombatSystem cs = new CombatSystem(); N�o pode mais instanciar o CombatSystem
 		boolean running = true;
 		boolean menuChoices = true;
 

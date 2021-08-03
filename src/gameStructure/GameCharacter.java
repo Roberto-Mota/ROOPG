@@ -1,5 +1,7 @@
 package gameStructure;
 
+import java.util.Random;
+
 public class GameCharacter { // caso eu precisa fazer um espï¿½cie de heranï¿½a mï¿½ltipla com alguma classe,
 									// precisarei usar interfaces
 
@@ -25,17 +27,27 @@ public class GameCharacter { // caso eu precisa fazer um espï¿½cie de heranï¿½a 
 	Vitals vitals = new Vitals();
 	Special special = new Special();
 
-	public GameCharacter(String nome, boolean NPC) {
+	public GameCharacter(String nome, boolean NPC) { // creating Player
 		this.nome = nome;
 		this.NPC = NPC;
-		this.level = 1;
+		this.level = 5; //Deixar no level 5 apenas para testes
 		this.xp = 0;
 		this.gold = 0;
 		GameCharacter.total++;
 	}
 
-	public GameCharacter(String nome, Player player, boolean NPC) {
-		this.setLevel(player.getLevel() - 1);
+	public GameCharacter(String nome, Player player, boolean NPC) { //spawning NPC
+		Random rand = new Random();
+		this.NPC = NPC;
+		
+		this.setNome(nome);
+		
+		// TODO: setNome pegue uma lista String de possíveis nomes para cada tipo de npc em suas respectivas classes
+		//this.setNome(Object.Namelist[rand.nextInt(list.Length)]);
+		
+		this.setLevel(rand.nextInt(player.getLevel()- 1)+1);
+		this.setAgility(rand.nextInt(8));	//(rand.nextInt(this.getLevel()- 1)+1); <- Versão oficial em teste sem hardcode
+		
 	}
 
 	public boolean attack(double dano, GameCharacter enemy) {

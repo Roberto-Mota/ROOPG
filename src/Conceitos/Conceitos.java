@@ -1,8 +1,11 @@
 package Conceitos;
+
+import java.util.ArrayList;
 import java.time.*;
 import java.util.Random;
 import java.util.Scanner;
 
+import gameStructure.NonPlayable;
 import gameStructure.Player;
 
 public class Conceitos {

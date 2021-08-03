@@ -1,13 +1,19 @@
 package gameStructure;
 
+import java.util.Random;
+
 public abstract class NonPlayable extends GameCharacter{
 	
-	protected double XpPool = 25.0 * this.getLevel();
+	Random rand = new Random();
+	
+	protected Double XpPool = Double.valueOf((double) 20 * rand.nextInt(this.getLevel()));
+
 
 	public NonPlayable(String nome, Player player, boolean NPC) {
 		super(nome, player, NPC);
 		
 	}
+	
 	
 	
 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1acaa8d9-72fd-4d83-9f82-ea2d578e9ae8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/gameStructure/Character.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/gameStructure/CombatSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/gameStructure/CombatSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/gameStructure/NonPlayable.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/gameStructure/NonPlayable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/gameStructure/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/gameStructure/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/gameStructure/TestaCriaChar.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/gameStructure/TestaCriaChar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/mainGame/Conceitos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/mainGame/MenuTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/mainGame/MenuTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameStructure/Beast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameStructure/Beast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameStructure/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameStructure/GameCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameStructure/CombatSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameStructure/CombatSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameStructure/NonPlayable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameStructure/NonPlayable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameStructure/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameStructure/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainGame/Conceitos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conceitos/Conceitos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainGame/MenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGame/MenuTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1vzPz1rKgEy0lzuCNosJipdEmZ4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1acaa8d9-72fd-4d83-9f82-ea2d578e9ae8" name="Default Changelist" comment="" />
+      <created>1627562207459</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627562207459</updated>
+    </task>
+    <servers />
+  </component>
+</project>
