@@ -11,7 +11,7 @@ public class CombatSystem {
 	Random rand = new Random(); // Utilizar para randomizacaooo de coisas no jogo
 
 	// Variaveis dos inimigos
-	ArrayList monsters = new ArrayList();
+	ArrayList<NonPlayable> monsters = new ArrayList<NonPlayable>();
 	String[] beastEnemies = { "Spider", "Wolf", "Boar", "Bear" };
 	String[] monsterEnemies = { "Ghost", "Zombie", "Treant", "Slime" };
 	String[] humanoidEnemies = { "Skeleton", "Troll", "Goblin", "Kobold" };// Cria-se, de forma literal, uma array de
@@ -23,20 +23,23 @@ public class CombatSystem {
 
 	boolean combat = true;
 	boolean spawn = true;
+	
+	ArrayList<NonPlayable> dungeonEnemies = new ArrayList<NonPlayable>();
 
 	public void BeastCombat(Player player, boolean combat) {
 		while (combat == true) {
 			// Monster Spawn
 			// String enemy = enemies[rand.nextInt(enemies.length)]; // Pega o nome do inimigo
-			
 			while (spawn == true) {
-				ArrayList<NonPlayable> dungeonEnemies = new ArrayList<NonPlayable>();
+				
 
 				Integer dungeonSize = rand.nextInt(5) + 2; // The dungeon will have at least 2 enemies, up to 7 total
 
 				for (int i = 0; i <= dungeonSize; i++) {
 
 					int enemyType = rand.nextInt(2); // 0 Beast, 1 Monster, 2 Humanoid.
+					
+					//TODO: Class SpawnSystem
 
 					if (enemyType == 0) {
 						Beast beast = new Beast(beastEnemies[rand.nextInt(beastEnemies.length)], player, true);
@@ -58,7 +61,12 @@ public class CombatSystem {
 
 				}
 				spawn = false;
+				break;
 			}
+			
+			// TODO: Pick an enemy from the arrayList and make the player fight against it
+			
+			Object enemy = dungeonEnemies.get(rand.nextInt(dungeonEnemies.size()));
 			
 			int enemyHealth = rand.nextInt(maxEnemyHealth); // The paramater is the max value that this random int can
 			// be (0 to numero dado)
@@ -81,11 +89,7 @@ public class CombatSystem {
 					break; // Esse break quebra o loop running
 				}
 				
-				// TODO: Pick an enemy from the arrayList and make the player fight against it
-				
-				//Nessa parte preciso especificar o tipo de inimigo antes de criar o objeto
-				//Object enemy = dungeonEnemies.get(rand.nextInt(dungeonEnemies.size()));
-				//PAREI AQUI ^
+
 				
 				System.out.println("\t# " + enemy + " has appeared! #\n");
 				System.out.println("\tYour HP: " + health);
