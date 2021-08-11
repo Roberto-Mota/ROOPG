@@ -24,8 +24,8 @@ public class GameCharacter { // caso eu precisa fazer um espï¿½cie de heranï¿½a 
 
 	private boolean NPC = false;
 	public static int total;
-	Vitals vitals = new Vitals();
-	Special special = new Special();
+	Vitals vitals = new Vitals(); //Caso eu coloque transient em uma classe dentro de outra, como aqui,
+	Special special = new Special();	// o serial não passará por ele
 
 	public GameCharacter(String nome, boolean NPC) { // creating Player
 		this.nome = nome;

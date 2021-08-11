@@ -13,8 +13,8 @@ public class MenuTest {
 		// Objetos do sistema
 		Scanner in = new Scanner(System.in);
 		Random rand = new Random(); // Utilizar para randomizacao de coisas no jogo
-		
-		CombatSystem cs = new CombatSystem(); Não pode mais instanciar o CombatSystem
+
+		CombatSystem cs = new CombatSystem(); // Não pode mais instanciar o CombatSystem
 		boolean running = true;
 		boolean menuChoices = true;
 
@@ -26,8 +26,19 @@ public class MenuTest {
 
 			// Character creation
 			System.out.println("Whats your name?");
-			String input = in.nextLine(); // Retorna qualquer coisa que eu escrever no console (pode abrir aqui pra
-											// possibilidades de GUI)
+			String input = in.next(); // Retorna qualquer coisa que eu escrever no console (pode abrir aqui pra
+										// possibilidades de GUI)
+			System.out.println("Want to change your name?");
+			String answer = in.next();
+
+			while (true) {
+				if ("Y".equals(answer)) {
+					// TODO: loop para selecionar o nome
+				} else if ("N".equals(answer)) {
+					break;
+				}
+			}
+
 			String nomePersonagem = input;
 
 			System.out.println("Choose your class");
@@ -60,9 +71,7 @@ public class MenuTest {
 
 					break;
 				}
-
 				case 2: // Tentar dormir, com leve risco de spawnar outro mob
-
 				{
 
 					System.out.println("How many hours do you want to sleep?");

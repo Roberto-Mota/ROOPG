@@ -1,0 +1,1 @@
+level:1;classe:warrior;xp:1000;nome:Kormok

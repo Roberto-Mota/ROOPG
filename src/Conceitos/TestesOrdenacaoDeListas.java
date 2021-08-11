@@ -10,7 +10,7 @@ import gameStructure.Monster;
 import gameStructure.NonPlayable;
 import gameStructure.Player;
 
-public class ListasClassesAnonimasELambdas {
+public class TestesOrdenacaoDeListas {
 	/**
 	 * Nessa aula fundamental e importante aprendemos que:
 	 *

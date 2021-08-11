@@ -1,7 +1,13 @@
 package gameStructure;
 
-public class Player extends GameCharacter {
+import java.io.Serializable;
+
+public class Player extends GameCharacter implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L; //Identificacao da classe
 	private int classe; //00 -> warrior, 01 -> rogue, 02 -> mage
 	
 
